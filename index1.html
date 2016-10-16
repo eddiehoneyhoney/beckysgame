@@ -1,97 +1,12 @@
 <html>
 <head>
-    
+    <meta http-equiv="refresh" content="0; URL='http://xama.online/games/beckysgame/beckysgame.html'" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-     <meta name="mobile-web-app-capable" content="yes"> 
-      <link rel="manifest" href="/manifest.json">
-      <link rel="icon" href="/imgs/iconbeckysgame.png">
+    
     
 <style>
-   body {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-image: url(/imgs/mountain-lion-1577644_640.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-} 
-    
-   .logo{
-             color:deepskyblue;
-             text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15); 
-         }   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 img { 
 display: block;
 width:300px;
@@ -102,7 +17,82 @@ height:;
      
     
     
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: lightblue;
+    background-image:url(b8.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #777;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: royalblue;
+}
+
+.modal-body {padding: 2px 16px;
+    color: royalblue;
+    }
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: royalblue;
+}
 
  body{
  background-image: url('imgs/back.jpg');
@@ -133,63 +123,75 @@ background-attachment: fixed;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-    
-    .buttons {
-        border: 0px;
-  display: inline-block;
-  padding: 3px 7px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: ghostwhite; /*~#4caf50*/
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.buttons:hover {background-color:whitesmoke;}
-
-.buttons:active {
-  background-color: antiquewhite;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-    
-    
-    
 </style>
 </head>
-<body onload="openNav();">
+<body onload="redirect();">
 
    <audio autoplay loop>
   <source src="row.ogg" type="audio/ogg">
   
 Your browser does not support the audio element.
 </audio> 
-    <div id="myNav" class="overlay">
- 
-  <div class="overlay-content">
-      <h1 class="logo">Click on start to start</h1>
-      <button  class="buttons" onclick="closeNav();"><div class="logo">start</div></button>
+     
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="text-align:center;">
+    <div class="modal-header">
+      <span class="close">X</span>
+      <h2>Hi everybody welcome to beckys game enjoy the game</h2>
+    </div>
+    <div class="modal-body">
+      <p>Only works with chrome in Linux, windows desktop<br>
+Hi works in chrome at the moment, to use click in the images.  Soon version in portuguese from brazil. Thank you. Made by R. Edward Gouveia </p>
+        click in X to close <br>
+        
+    </div>
+    <div class="modal-footer">
+      <h3>Made by R. Edward Gouveia</h3>
+    </div>
   </div>
+
 </div>
-    
-    <script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+
+<script>
+    function redirect(){
+       window.location = "http://xama.online/games/beckysgame/beckysgame.html"; 
+    }
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+function load() {
+    modal.style.display = "block";
+// var msg = new SpeechSynthesisUtterance('Hi everybody welcome to beckys game enjoy the game. Works in chrome at the moment, to use click in the images.   Soon version in portuguese from brazil. Thank you. Made by R. Edward Gouveia. Click X to close . este jogo e dedicado a Rebecca Gouveia e Lourenco minha filha e neto');
+ var msg = new SpeechSynthesisUtterance('Ola este jogo e feito para Lourenso e Rebecca Gouveia minha filha e neto. pra jogar clique nas imagens. feito por R. Edward Gouveia');
+msg.lang = 'pt-BR';
+window.speechSynthesis.speak(msg);
 }
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
-    
-    
-
-
 
 
 
