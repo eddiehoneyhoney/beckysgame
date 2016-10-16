@@ -214,9 +214,17 @@ Your browser does not support the audio element.
     <script>
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
+   
 }
 
 function closeNav() {
+    var a = new Audio();
+    if (a.canPlayType("audio/ogg")){
+        a.src = "row.ogg";
+        loop = true;
+        a.play();
+    }
+    
     document.getElementById("myNav").style.width = "0%";
 }
 </script>
