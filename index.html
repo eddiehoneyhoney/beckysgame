@@ -173,7 +173,8 @@ Your browser does not support the audio element.
  
   <div class="overlay-content">
       <h1 class="logo">Click on start to start</h1>
-      <button  class="buttons" onclick="closeNav();"><div class="logo">start</div></button>
+      <button  class="buttons" onclick="closeNav();"><div class="logo">start</div></button><br><br>
+      <footer class="logo">Made by R. Edward Gouveia</footer>
   </div>
 </div>
     
@@ -275,7 +276,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 </p>
 </div>
 <script>
-var a = new Audio('a.ogg'); 
+var a = new Audio(); 
 var b = new Audio('b.ogg'); 
 var c = new Audio('c.ogg'); 
 var d = new Audio('d.ogg'); 
@@ -303,10 +304,15 @@ var y = new Audio('y.ogg');
 var z = new Audio('z.ogg');
  
 function playAudioa() { 
-  
-var msg = new SpeechSynthesisUtterance('Antilope');
-msg.lang = 'en-US';
-window.speechSynthesis.speak(msg);  
+   if (a.canPlayType("audio/ogg")){
+       a.src = "antilopeeng.ogg";
+       a.play();
+   }
+    
+    
+//var msg = new SpeechSynthesisUtterance('Antilope');
+//msg.lang = 'en-US';
+//window.speechSynthesis.speak(msg);  
  //a.play(); 
 } 
 
