@@ -27,11 +27,11 @@
 
   <!-- Android only -->
   
-  <preference name="android-minSdkVersion" value="10" />
+  <preference name="android-minSdkVersion" value="11" />
  
   
   
-  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+  
 <icon src="/icon.png" gap:role="default" />
 <platform name="android" >
   <preference name="orientation" value="portrait" />
