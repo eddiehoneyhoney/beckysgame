@@ -33,8 +33,6 @@
   
   
 <icon src="/icon.png" gap:role="default" />
-<platform name="android" >
-  <preference name="orientation" value="portrait" />
-</platform>
+
 
 </widget>
