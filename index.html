@@ -12,7 +12,14 @@
    body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-}
+
+ background-image: url('imgs/back.jpg');
+background-size: cover;
+background-attachment: fixed;
+
+    
+    }
+    
 
 .overlay {
     height: 100%;
@@ -136,13 +143,7 @@ height:;
     
 
 
- body{
- background-image: url('imgs/back.jpg');
-background-size: cover;
-background-attachment: fixed;
 
-
-}
 .button {
   display: inline-block;
   padding: 3px 7px;
@@ -194,7 +195,7 @@ background-attachment: fixed;
     
 </style>
 </head>
-<body onstart="openNav();">
+<body onload="openNav();">
 
    <audio autoplay loop>
   <source src="row.ogg" type="audio/ogg">
@@ -204,7 +205,7 @@ Your browser does not support the audio element.
     <div id="myNav" class="overlay">
  
   <div class="overlay-content">
-      <h1 class="logo">Click on start to start</h1>
+      <h1 class="logo">Welcome  to becky's game.<br>Click on start to start</h1>
       <button  class="buttons" onclick="closeNav();"><div class="logo">start</div></button><br><br>
       <h7 class="logofooter">Made by R. Edward Gouveia</h7>
   </div>
