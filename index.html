@@ -84,6 +84,38 @@
          }   
     
     
+    .logohead{
+             color:dodgerblue;
+             text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); 
+         }   
+    
+     .logofooter{
+             color:honeydew;
+             text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); 
+         }   
+    
     
     
     
@@ -174,7 +206,7 @@ Your browser does not support the audio element.
   <div class="overlay-content">
       <h1 class="logo">Click on start to start</h1>
       <button  class="buttons" onclick="closeNav();"><div class="logo">start</div></button><br><br>
-      <footer class="logo">Made by R. Edward Gouveia</footer>
+      <h7 class="logofooter">Made by R. Edward Gouveia</h7>
   </div>
 </div>
     
@@ -203,7 +235,8 @@ function closeNav() {
 
 
 <div  style="text-align:center;">
-
+<h1 class="logohead">Becky's Game</h1>
+    <footer>Made By R. Edward Gouveia</footer>
 <!--
 <img id="antilopef" src="imgs/antilopef.png" alt="Female Antilope"/>
 <img id="baboon" src="imgs/baboon.png" alt="Baboon"/>
@@ -241,9 +274,9 @@ style="border:1px solid blue;background-color:cyan;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 -->
 
-<p><button class="button" onclick="playAudioa();">A<img id="antilopef" src="imgs/antilopef.png" alt="Female Antilope"/></button>
-<button class="button" onclick="playAudiob();">B<img id="baboon" src="imgs/baboon.png" alt="Baboon"/></button>
-<button class="button" onclick="playAudioc();">C<img id="cat" src="imgs/nano.png" alt="cat"/></button>
+<p><div class="button" onclick="playAudioa();">A<img id="antilopef" src="imgs/antilopef.png" alt="Female Antilope"/></div>
+<div class="button" onclick="playAudiob();">B<img id="baboon" src="imgs/baboon.png" alt="Baboon"/></div>
+<div class="button" onclick="playAudioc();">C<img id="cat" src="imgs/nano.png" alt="cat"/></div>
 <button class="button" onclick="playAudiod();">D<img id="dolphin" src="imgs/dolphin.png" alt="Dolphin"/></button>
 <button class="button" onclick="playAudioe();">E<img id="eagle" src="imgs/eagle.png" alt="eagle"/></button>
 <button class="button" onclick="playAudiof();">F<img id="fox" src="imgs/fox.png" alt="Fox"/></button>
@@ -276,6 +309,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 </p>
 </div>
 <script>
+    /*
 var a = new Audio(); 
 var b = new Audio('b.ogg'); 
 var c = new Audio('c.ogg'); 
@@ -302,13 +336,14 @@ var w = new Audio('w.ogg');
 var x = new Audio('x.ogg'); 
 var y = new Audio('y.ogg'); 
 var z = new Audio('z.ogg');
- 
+ */
 function playAudioa() { 
+    var a = new Audio();
    if (a.canPlayType("audio/ogg")){
        a.src = "antilopeeng.ogg";
        a.play();
    }
-    
+
     
 //var msg = new SpeechSynthesisUtterance('Antilope');
 //msg.lang = 'en-US';
@@ -317,10 +352,11 @@ function playAudioa() {
 } 
 
 function playAudiob() { 
+     var b = new Audio();
    if (b.canPlayType("audio/ogg")){
        b.src = "babooneng.ogg";
-       a.play();
-   
+       b.play();
+   }
  //var msg = new SpeechSynthesisUtterance('baboon');
 //msg.lang = 'en-US';
 //window.speechSynthesis.speak(msg);
@@ -328,6 +364,7 @@ function playAudiob() {
    //b.play(); 
 } 
 function playAudioc() { 
+     var c = new Audio();
  if (c.canPlayType("audio/ogg")){
        c.src = "cateng.ogg";
        c.play();
@@ -339,7 +376,8 @@ function playAudioc() {
 //window.speechSynthesis.speak(msg);   
  //c.play(); 
 } 
-function playAudiod() { 
+function playAudiod() {
+     var d = new Audio();
  if (d.canPlayType("audio/ogg")){
        d.src = "dolphineng.ogg";
        d.play();
@@ -350,7 +388,8 @@ function playAudiod() {
 //window.speechSynthesis.speak(msg);   
  //d.play(); 
 } 
-function playAudioe() { 
+function playAudioe() {
+     var e = new Audio();
  if (e.canPlayType("audio/ogg")){
        e.src = "eagleeng.ogg";
        e.play();
@@ -360,7 +399,9 @@ function playAudioe() {
 //window.speechSynthesis.speak(msg);    
 //e.play(); 
 } 
+
 function playAudiof() { 
+     var f = new Audio();
  if (f.canPlayType("audio/ogg")){
        f.src = "foxeng.ogg";
        f.play();
@@ -370,7 +411,8 @@ function playAudiof() {
 //window.speechSynthesis.speak(msg);    
 //f.play(); 
 } 
-function playAudiog() { 
+function playAudiog() {
+     var g = new Audio();
  if (g.canPlayType("audio/ogg")){
        g.src = "gorillaeng.ogg";
        g.play();
@@ -381,6 +423,7 @@ function playAudiog() {
   //g.play(); 
 } 
 function playAudioh() { 
+     var h = new Audio();
  if (h.canPlayType("audio/ogg")){
        h.src = "humaneng.ogg";
        h.play();
@@ -390,7 +433,8 @@ function playAudioh() {
 //window.speechSynthesis.speak(msg);   
 // h.play(); 
 } 
-function playAudioi() { 
+function playAudioi() {
+     var i = new Audio();
  if (i.canPlayType("audio/ogg")){
        i.src = "iguanaeng.ogg";
        i.play();
@@ -401,6 +445,7 @@ function playAudioi() {
 //i.play(); 
 } 
 function playAudioj() { 
+     var j = new Audio();
  if (j.canPlayType("audio/ogg")){
        j.src = "jaguareng.ogg";
        j.play();
@@ -410,7 +455,8 @@ function playAudioj() {
 //window.speechSynthesis.speak(msg);    
 //j.play(); 
 } 
-function playAudiok() { 
+function playAudiok() {
+     var k = new Audio();
  if (k.canPlayType("audio/ogg")){
        k.src = "kangoroeng.ogg";
        k.play();
@@ -420,7 +466,8 @@ function playAudiok() {
 //window.speechSynthesis.speak(msg); 
    // k.play(); 
 } 
-function playAudiol() { 
+function playAudiol() {
+     var l = new Audio();
  if (l.canPlayType("audio/ogg")){
        l.src = "leopardeng.ogg";
        l.play();
@@ -432,6 +479,7 @@ function playAudiol() {
 //l.play(); 
 } 
 function playAudiom() { 
+     var m = new Audio();
  if (m.canPlayType("audio/ogg")){
        m.src = "mountainlioneng.ogg";
        m.play();
@@ -441,7 +489,8 @@ function playAudiom() {
 //window.speechSynthesis.speak(msg);     
 //m.play(); 
 } 
-function playAudion() { 
+function playAudion() {
+     var n = new Audio();
  if (n.canPlayType("audio/ogg")){
        n.src = "norfolkterriereng.ogg";
        n.play();
@@ -452,6 +501,7 @@ function playAudion() {
  //n.play(); 
 } 
 function playAudioo() { 
+     var o = new Audio();
  if (o.canPlayType("audio/ogg")){
        o.src = "oceloteeng.ogg";
        o.play();
@@ -461,7 +511,8 @@ function playAudioo() {
 //window.speechSynthesis.speak(msg);     
 //o.play(); 
 } 
-function playAudiop() { 
+function playAudiop() {
+     var p = new Audio();
  if (p.canPlayType("audio/ogg")){
        p.src = "panthereng.ogg";
        p.play();
@@ -471,7 +522,8 @@ function playAudiop() {
 //window.speechSynthesis.speak(msg);     
 //p.play(); 
 } 
-function playAudioq() { 
+function playAudioq() {
+     var q = new Audio();
  if (q.canPlayType("audio/ogg")){
        q.src = "quaileng.ogg";
        q.play();
@@ -481,7 +533,8 @@ function playAudioq() {
 //window.speechSynthesis.speak(msg);     
 //q.play(); 
 } 
-function playAudior() { 
+function playAudior() {
+     var r = new Audio();
  if (r.canPlayType("audio/ogg")){
        r.src = "rhinoceroseng.ogg";
        r.play();
@@ -491,7 +544,8 @@ function playAudior() {
 //window.speechSynthesis.speak(msg);     
 //r.play(); 
 } 
-function playAudios() { 
+function playAudios() {
+     var s = new Audio();
  if (s.canPlayType("audio/ogg")){
        s.src = "sumatratigereng.ogg";
        s.play();
@@ -502,6 +556,7 @@ function playAudios() {
 //s.play(); 
 } 
 function playAudiot() { 
+     var t = new Audio();
  if (t.canPlayType("audio/ogg")){
        t.src = "thornydevileng.ogg";
        t.play();
@@ -511,7 +566,8 @@ function playAudiot() {
 //window.speechSynthesis.speak(msg);     
 //t.play(); 
 } 
-function playAudiou() { 
+function playAudiou() {
+     var u = new Audio();
  if (u.canPlayType("audio/ogg")){
        u.src = "uakarieng.ogg";
        u.play();
@@ -522,7 +578,8 @@ function playAudiou() {
 //u.play();
 
 } 
-function playAudiov() { 
+function playAudiov() {
+     var v = new Audio();
  if (v.canPlayType("audio/ogg")){
        v.src = "velvetmonkeyeng.ogg";
        v.play();
@@ -533,6 +590,7 @@ function playAudiov() {
 //v.play(); 
 } 
 function playAudiow() { 
+     var w = new Audio();
  if (w.canPlayType("audio/ogg")){
        w.src = "warthogeng.ogg";
        w.play();
@@ -542,7 +600,8 @@ function playAudiow() {
 //window.speechSynthesis.speak(msg);     
 //w.play(); 
 } 
-function playAudiox() { 
+function playAudiox() {
+     var x = new Audio();
  if (x.canPlayType("audio/ogg")){
        x.src = "x-raytetraeng.ogg";
        x.play();
@@ -552,7 +611,8 @@ function playAudiox() {
 //window.speechSynthesis.speak(msg);     
 //x.play(); 
 } 
-function playAudioy() { 
+function playAudioy() {
+     var y = new Audio();
  if (y.canPlayType("audio/ogg")){
        y.src = "yorkshireterriereng.ogg";
        y.play();
@@ -562,7 +622,8 @@ function playAudioy() {
 //window.speechSynthesis.speak(msg);     
 //y.play(); 
 } 
-function playAudioz() { 
+function playAudioz() {
+     var z = new Audio();
  if (z.canPlayType("audio/ogg")){
        z.src = "zebraeng.ogg";
        z.play();
